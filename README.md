@@ -1,6 +1,6 @@
 # MATLAB/Octave Implementation of Recommendation ITU-R P.1546-6
 
-This code repository contains a MATLAB/Octave software implementation of Recommendation [Recommendation ITU-R P.1546-6](https://www.itu.int/rec/R-REC-P.1546/en) with a method for point-to-area predictions for terrestrial services in the frequency range 30 MHz to 4000 MHz.  
+This code repository contains a MATLAB/Octave software implementation of  [Recommendation ITU-R P.1546-6](https://www.itu.int/rec/R-REC-P.1546/en) with a method for point-to-area predictions for terrestrial services in the frequency range 30 MHz to 4000 MHz.  
 
 The reference version of this code (as approved by ITU-R Working Party 3K) is published by Study Group 3 on [ITU-R SG 3 Software, Data, and Validation Web Page](https://www.itu.int/en/ITU-R/study-groups/rsg3/Pages/iono-tropo-spheric.aspx).
 
