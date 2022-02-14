@@ -12,7 +12,7 @@ The following table describes the structure of the folder `./matlab/` containing
 |`validateP1546.m`          | MATLAB script used to validate the implementation of Recommendation ITU-R P.1546-6 in `P1546FieldStrMixed.m`             |
 |`./validation_profiles/`    | Folder containing a proposed set of terrain profiles and inputs for validation of MATLAB implementation (or any other software implementation) of this Recommendation |
 |`./validation_results/`	   | Folder containing all the results written during the transmission loss computations for the set of terrain profiles defined in the folder `./validation_profiles/` |
-|`./src/`   |             Folder containing the functions used by `validateP1546.m to read the test terrain profiles and compute all the parameters required as arguments of the function `P1546FieldStrMixed`|
+|`./src/`   |             Folder containing the functions used by `validateP1546.m` to read the test terrain profiles and compute all the parameters required as arguments of the function `P1546FieldStrMixed`|
 
 ## Function Call
 
@@ -44,12 +44,12 @@ The function `P1546FieldStrMixed` can be called
 | `h2`           | scalar double    | m      |             |  Receiving/mobile antenna height above ground level |
 | `R2`           | scalar double    | m      |              |  Representative clutter height around receiver. Typical values: `R2`=10 for `area`='Rural' or 'Suburban' or 'Sea',  `R2`=15 for `area`='Urban', `R2`=20 for `area`='Dense Urban'    |
 | `area`           | string    |       | 'Land, 'Sea', 'Warm', 'Cald'            |  Area around the receiver.|
-| `d_v`               | array double | km    | `sum(d_v)` ≤ ~1000 | | Array of horizontal path lengths over different path zones starting from transmitter/base station terminal.|
-| `path_c`           | cell strings    |       |     'Land', 'Sea', 'Warm', 'Cold'         |  Cell of strings defining the path zone for each given path lenght in `d_v` starting from the transmitter/base terminal. |
-| `pathinfo`           | scalar int    |  0,1     |           |  0 - no terrain profile information available, 1 - terrain information available |
+| `d_v`               | array double | km    | `sum(d_v)` ≤ ~1000 | Array of horizontal path lengths over different path zones starting from transmitter/base station terminal.|
+| `path_c`           | cell string    |       |     'Land', 'Sea', 'Warm', 'Cold'         |  Cell of strings defining the path zone for each given path lenght in `d_v` starting from the transmitter/base terminal. |
+| `pathinfo`           | scalar int    |      |        0, 1    |  0 - no terrain profile information available, 1 - terrain information available |
 
 
-## Optional input arguments of function ``P1546FieldStrMixed`
+## Optional input arguments of function `P1546FieldStrMixed`
 | Variable          | Type   | Units | Limits       | Description  |
 |-------------------|--------|-------|--------------|--------------|
 | `q`           | scalar double    | %      |   1 ≤ `q`  ≤ 99          |  Location percentage for which the calculated basic transmission loss is not exceeded. Default is 50%. |
@@ -80,7 +80,7 @@ The function `P1546FieldStrMixed` can be called
 Notes:
 If sea path is selected for a `t` value less then 50% the default 10% table use is a cold sea path.
 
-% Not implemented in this version of the code:
+Not implemented in this version of the code:
 * Annex 7: Adjustment for different climatic regions
 * Annex 5, Section 4.3a): C_h1 calculation (terrain database is  available and the potential of discontinuities around h1 = 0 is of no concern)
 
