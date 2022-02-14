@@ -20,17 +20,17 @@ The function `P1546FieldStrMixed` can be called
 
 1. by invoking only the required input arguments:
 ~~~
-[Lb, Ep] = P1546FieldStrMixed(f, t, heff, h2, R2, area, d_v, path_c, pathinfo);
+[Ep, Lb] = P1546FieldStrMixed(f, t, heff, h2, R2, area, d_v, path_c, pathinfo);
 ~~~
 
 2. by explicitly invoking all the input arguments (both required and optional):
 ~~~
-[Lb, Ep] = P1546FieldStrMixed(f, t, heff, h2, R2, area, d_v, path_c, pathinfo, ...
+[Ep, Lb] = P1546FieldStrMixed(f, t, heff, h2, R2, area, d_v, path_c, pathinfo, ...
                           q, wa, PTx, ha, hb, R1, tca, htter, hrter, eff1, eff2, debug, fidlog);
 ~~~
 3. or by explicitly omitting some of the optional input arguments using []:
 ~~~
-[Lb, Ep] = P1546FieldStrMixed(f, t, heff, h2, R2, area, d_v, path_c, pathinfo, ...
+[Ep, Lb] = P1546FieldStrMixed(f, t, heff, h2, R2, area, d_v, path_c, pathinfo, ...
                         q, wa, PTx, [], [], [], [], [], [], [], [], debug, fidlog);
 ~~~
 
