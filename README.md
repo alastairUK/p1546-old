@@ -27,9 +27,9 @@ The function `P1546FieldStrMixed` can be called
 corresponding value. Name must appear inside quotes. You can specify several name and value pair arguments in any order as
 Name1,Value1,...,NameN,ValueN:
 ~~~
-[E, L] = P1546FieldStrMixed(f, t, heff, h2, R2, area, d_v, path_c, pathinfo, ...
-~~~                              'q', 50, 'wa', 27, 'Ptx', 1, 'ha', 100);
-
+[Ep, Lb] = P1546FieldStrMixed(f, t, heff, h2, R2, area, d_v, path_c, pathinfo, ...
+                            'q', 50, 'wa', 27, 'Ptx', 1, 'ha', 100);
+~~~  
 
 ## Required input arguments of function `P1546FieldStrMixed`
 
